@@ -40,7 +40,8 @@ public class Test1Activity extends AppCompatActivity {
     }
 }
 ```
-if you don't set some params,it will be set some default params in FruitLoadView
+
+
 
 **Attrs**
 
