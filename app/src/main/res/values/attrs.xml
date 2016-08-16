@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RangeSeekbar">
+        <attr name="seekbarHeight" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="spaceBetween" format="dimension" />
+        <attr name="leftCursorBackground" format="reference" />
+        <attr name="rightCursorBackground" format="reference" />
+        <attr name="markTextArray" format="reference" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="seekbarColorNormal" format="color" />
+        <attr name="seekbarColorSelected" format="color" />
+        <attr name="autoMoveDuration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FruitLoadView">
+        <attr name="shadowColor" format="color" />
+        <!--弹起的最大高度-->
+        <attr name="maxHeight" format="dimension" />
+        <!--图片的高度-->
+        <attr name="fruitHeight" format="dimension" />
+        <!--图片的宽度-->
+        <attr name="fruitWidth" format="dimension" />
+
+        <attr name="fruitDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ZoomLoadView">
+        <attr name="animatorDuration" format="integer" />
+        <!--如果自定义建议该值不要超过0.5f-->
+        <attr name="zoomScale" format="float" />
+        <attr name="zoomDrawable" format="reference" />
+    </declare-styleable>
+
+</resources>
