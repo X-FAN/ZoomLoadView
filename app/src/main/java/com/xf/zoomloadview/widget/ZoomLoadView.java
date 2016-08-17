@@ -1,6 +1,7 @@
 package com.xf.zoomloadview.widget;
 
 import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -67,25 +68,11 @@ public class ZoomLoadView extends View {
                 invalidate();
             }
         });
-        mAnimator.addListener(new Animator.AnimatorListener() {
-            @Override
-            public void onAnimationStart(Animator animation) {
 
-            }
-
+        mAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
                 mEndListener.onEndListener();
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animation) {
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animator animation) {
-
             }
         });
     }
@@ -147,7 +134,6 @@ public class ZoomLoadView extends View {
 
     public void setEndListener(EndListener endListener) {
         mEndListener = endListener;
-        invalidate();
         mAnimator.start();
     }
 
